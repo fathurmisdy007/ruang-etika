@@ -12,8 +12,8 @@ Website bertujuan meningkatkan kesadaran tentang pentingnya komunikasi yang sopa
 | Nama proyek | Ruang Etika |
 | Tema | Etika dalam Bermedia Sosial |
 | Mata kuliah | Literasi Digital |
-| Nama mahasiswa | [Fathur Rahman Misdyanto] |
-| NIM | [09010626011] |
+| Nama mahasiswa | Fathur Rahman Misdyanto |
+| NIM | 09010626011 |
 | Program studi | Sistem Informasi |
 | Fakultas | Sains dan Teknologi |
 | Universitas | UIN Sunan Ampel Surabaya |
@@ -655,8 +655,8 @@ Website diharapkan menjadi media edukasi sederhana yang mendorong penggunaan med
 
 ---
 
-**Dikembangkan oleh:** [Fathur Rahman Misdyanto]  
-**NIM:** [09010626011]  
+**Dikembangkan oleh:** Fathur Rahman Misdyanto
+**NIM:** 09010626011
 **Program Studi:** Sistem Informasi  
 **Universitas:** UIN Sunan Ampel Surabaya  
 **Tahun:** 2026
