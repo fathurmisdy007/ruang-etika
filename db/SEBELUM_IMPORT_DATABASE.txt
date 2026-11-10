@@ -1,0 +1,40 @@
+RUANG ETIKA — PANDUAN AMAN DATABASE (tanpa mengubah README.md)
+
+A. KOMPUTER / DATABASE BARU
+1. XAMPP: Start Apache dan MySQL, buka phpMyAdmin.
+2. Import db/database.sql (atau database.sql di root, keduanya identik).
+3. Buat akun admin pertama melalui CLI: php admin/create-admin.php.
+
+B. DATABASE EXISTING BERISI ARTIKEL ATAU AKUN ADMIN
+1. JANGAN impor database.sql karena itu berisi data untuk INSTALASI BARU.
+2. Backup database etika_sosmed dari phpMyAdmin > Export > SQL, simpan di luar htdocs.
+3. Backup folder uploads/ dan file konfigurasi lokal di tempat pribadi.
+4. Setelah backup aman, impor db/migrations/001_upgrade_existing.sql sekali melalui phpMyAdmin.
+5. Lihat semua artikel pada admin: lengkapi alt text & sumber gambar yang kosong.
+6. Pastikan semua artikel published >=200 kata, memiliki kategori dan minimal 2 tag.
+7. Jangan mengunggah backup database pribadi ke GitHub publik (bisa memuat email/akun).
+
+C. AKUN DATABASE DENGAN HAK TERBATAS (DISARANKAN SESUAI MODUL)
+1. Sebagai administrator database di phpMyAdmin, buat user baru
+   'ruang_etika_app' untuk host 'localhost' dengan sandi acak yang kuat.
+2. Berikan hanya hak SELECT, INSERT, UPDATE, DELETE untuk database etika_sosmed.
+3. Salin config.local.example.php -> config.local.php, lalu isi username & sandi asli.
+   config.local.php tidak ikut Git dan ditolak oleh .htaccess di Apache.
+4. Verifikasi website dan dashboard berfungsi, baru berhenti memakai root.
+   Jangan mengubah atau menghapus user/database existing selama migrasi.
+
+D. PULIHKAN PROYEK DI FOLDER BARU (TUGAS MODUL)
+1. Clone/ekstrak proyek ke htdocs/literasi-uji (gunakan salinan, jangan ubah folder lama).
+2. Impor db/database_uji.sql (KHUSUS UJI) yang membuat etika_sosmed_uji.
+   JANGAN impor db/database.sql untuk tes pemulihan: file itu memakai database UTAMA.
+3. Salin config.local.example.php sebagai config.local.php, isi DB_NAME etika_sosmed_uji
+   dan kredensial khusus database uji,
+   atau gunakan variabel lingkungan DB_* sesuai konfigurasi XAMPP.
+4. Buat admin pertama pada database uji melalui CLI jika belum ada.
+5. Jalankan http://localhost/literasi-uji/; uji artikel, dashboard, dan gambar.
+6. Ambil screenshot untuk laporan, jangan menghapus database atau proyek asli.
+
+CATATAN: Untuk pemulihan utuh dari DATABASE HIDUP, buat ekspor data yang aman
+(di luar repositori publik jika mengandung data pribadi). File db/database.sql
+adalah paket instalasi contoh; tidak dapat memuat artikel baru yang tersimpan
+hanya di MySQL komputer asal kecuali Anda mengekspornya kembali.

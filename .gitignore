@@ -1,0 +1,19 @@
+# Berkas lingkungan dan rahasia lokal
+.env
+config.local.php
+
+# Thumbnail yang diunggah admin ikut dicadangkan agar uji pemulihan utuh.
+# Abaikan berkas lain di uploads; hanya gambar dan konfigurasi pengaman yang diikuti.
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+!uploads/*.jpg
+!uploads/*.png
+!uploads/*.webp
+
+# Log dan berkas sistem/editor
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
