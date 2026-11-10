@@ -32,19 +32,19 @@ Website bertujuan meningkatkan kesadaran tentang pentingnya komunikasi yang sopa
 - Git untuk version control.
 - GitHub sebagai repositori proyek.
 
-Proyek tidak menggunakan WordPress, Composer, npm, maupun framework backend. Penggunaan PHP Native melalui VS Code telah mendapat izin dosen pengampu sebagai alternatif WordPress.
+website ini tidak menggunakan WordPress, Composer, npm, maupun framework backend. Penggunaan PHP Native melalui VS Code telah mendapat izin dosen pengampu sebagai alternatif WordPress.
 
 ## 3. Fitur Website
 
 ### 3.1 Halaman Pengunjung
 
-**Beranda**
+**Beranda*
 
 - Menampilkan identitas dan pengantar Ruang Etika.
-- Menampilkan artikel pilihan.
+- Menampilkan artikel pilihann.
 - Menyediakan navigasi menuju halaman lain.
 
-**Artikel**
+**Artikel*
 
 - Menampilkan daftar artikel edukasi.
 - Pencarian artikel berdasarkan judul.
@@ -53,12 +53,12 @@ Proyek tidak menggunakan WordPress, Composer, npm, maupun framework backend. Pen
 - Informasi kategori, tanggal, dan tag.
 - Gambar unggulan dengan alt text dan sumber.
 
-**Tentang Saya**
+**Tentang Saya*
 
 - Menjelaskan tujuan dan latar belakang Ruang Etika.
 - Memperkenalkan website sebagai media edukasi.
 
-**Kontak**
+**Kontak*
 
 - Formulir nama, email, subjek, dan pesan.
 - Validasi data formulir.
